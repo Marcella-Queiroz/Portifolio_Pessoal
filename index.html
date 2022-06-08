@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Marcella Queiroz</title>
+        <link rel="shortcut icon" href="Imagens/IMG-logo.png" title="Imagem Logo">
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    
+        
+        <!--Home-->
+        <header>
+            <nav class="sticky">
+              <a class="logo">Marcella Queiroz</a>
+              <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+              <ul class="nav-list">
+                <li><a href="#">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portifolio">Portifólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+              </ul>
+            </nav>
+          </header>
+        
+        <main class="background">
+            <img class="banner" src="Imagens/IMGBanner.jpg" ali ="middle" alt="Banner Home" title="Imagem Banner">
+            <p class="myname">Marcella Queiroz</p>
+            <div class="content">
+                <h1 class="typedtext"></h1>
+            </div>
+        </main>
+        <section>    
+            <div class="sobre">
+            
+                <article>
+                    <a name="sobre" class="puxarconteudo"></a> 
+                    <img class="imagemsobre" src="Imagens/IMGsobre.jpg" title="Imagem Sobre">
+                    <div class="texto">
+                        <p class="PGsobre" align="justify">Um pouco sobre mim: </h2>
+                        <p align="justify">Meu nome é Marcella Eduarda Queiroz, tenho 17 anos e atualmente estou descobrindo meu lado profissional.</p>
+                        <p align="justify">Sempre fui bastante interessava pela tecnologia e através dela pretendo ampliar meu conhecimento construir minha carreira.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section>
+            <div class="portifolio">
+                <a name="portifolio" class="puxarconteudo"></a>
+                <article>
+                    <h2 class="escportifolio">Portifólio</h2>
+                    <a href="https://github.com/Marcella-Queiroz/uploadSiteCarro.git"><img class="img1" src="Imagens/Site carro.png" title="Meu carro novinho"></a>
+                    <a href="https://marcella-queiroz.github.io/Barbearia-Alura/"><img class="img2" src="Imagens/Site barbearia Alura.png" title="Barbearia Alura" ></a>
+                    <a href="https://marcella-queiroz.github.io/Iniciando-JS/"><img class="confimgsites" src="Imagens/Site Alura midi.png" title="Alura Midi"></a>
+                    <a href="https://marcella-queiroz.github.io/Site_Libertadores/"><img class="img1" src="Imagens/Libertadores.png"  title="Libertadores"></a>
+                    <a href="https://fruta-fruto-flax.vercel.app/"><img class="img2" src="Imagens/Frutas e fruto.png" title="Frutas e Frutos"></a>
+                    <a href="https://brunogaudino.github.io/aparecidanutricao/"><img class="confimgsites" src="Imagens/Aparecida Nutrição.png" title="Aparecida Nutrição"></a>
+
+                </article>
+            </div>
+        </section>
+        <section>    
+            <div class="contato">
+                    <a name="contato" class="puxarconteudo"></a> 
+                    <h2 class="esccontato">Contato</h2>
+                    <form action="/formulario-contato" method="post">
+                        <div>
+                            <label for="nome">Nome:</label>
+                            <input type="texto" id="nome" name="nome_usuario" required>
+                        </div>
+                        <div>
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email_usuario" required>
+                        </div>
+                        <div>
+                            <label for="texto">Mensagem:</label>
+                            <textarea id="texto" name="texto_usuario"></textarea>
+                        </div>
+                    </form>
+                    <div class="button">
+                        <button type="submit">Enviar</button>
+                      </div>
+            </div>
+        
+        </section>
+
+        <footer class="footer">
+            
+            <p>
+                <a href="https://github.com/Marcella-Queiroz" title="Github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+    
+                <a href="https://www.linkedin.com/in/marcella-queiroz-604192238/" title="Linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/marcella.queiroz.3760" title="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+    
+            </p>
+            <p class="copyright"> &copy;Copyright Marcella Queiroz - 2022</p>
+        </footer>
+        
+        <script type="text/javascript" src="escrita.js"></script>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 200);
+            })
+            
+        </script>
+
+        <script src="mobile-navbar.js"></script>
+    </body>
+</html>
